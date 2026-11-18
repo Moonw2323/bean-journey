@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Journey | Bean Journey</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Karla:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><nav aria-label="Main"><span class="logo">Bean Journey</span><a href="index.html">Home</a><a href="journey.html" aria-current="page">Journey</a><a href="subscribe.html">Subscribe</a><a href="about.html">About</a></nav></header>
+<main id="main">
+<h1>From farm to cup</h1>
+<p>Press the button to reveal each stage of a bean's journey, one step at a time.</p>
+<ol class="pins" aria-label="Journey stages"><li>Farm</li><li>Harvest</li><li>Washing</li><li>Roasting</li><li>Packing</li><li>Your cup</li></ol>
+<div class="bar" role="progressbar" aria-label="Journey progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div></div></div>
+<p><button class="btn" id="next" type="button">Start the journey</button> <button class="btn alt" id="restart" type="button">Restart</button></p>
+<div id="stages" aria-live="polite">
+<article class="stage"><h2>Farm</h2><p>Coffee grows on shaded hillsides at 1,500 to 2,000 metres. The cool air slows ripening and builds flavour.</p></article>
+<article class="stage"><h2>Harvest</h2><p>Pickers choose only the ripe red cherries by hand, returning to the same trees several times a season.</p></article>
+<article class="stage"><h2>Washing and drying</h2><p>The fruit is removed from the seed, then the beans dry on raised beds for about two weeks.</p></article>
+<article class="stage"><h2>Roasting</h2><p>We roast small batches in our roastery, watching colour and sound to bring out sweetness without burning.</p></article>
+<article class="stage"><h2>Packing</h2><p>Beans rest for a few days, then go into resealable bags with the roast date printed on the front.</p></article>
+<article class="stage"><h2>Your cup</h2><p>Grind just before brewing and enjoy. The journey ends at your table.</p></article>
+</div>
+</main>
+<footer>&copy; 2026 Bean Journey. A student project for COM109.</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/journey.js"></script>
+</body>
+</html>
