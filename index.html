@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Bean Journey</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Karla:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><nav aria-label="Main"><span class="logo">Bean Journey</span><a href="index.html" aria-current="page">Home</a><a href="journey.html">Journey</a><a href="subscribe.html">Subscribe</a><a href="about.html">About</a></nav></header>
+<main id="main">
+<h1>Coffee with a story</h1>
+<p>Bean Journey roasts small batches from three farms we know by name. Follow a bean from the hillside to your cup, then subscribe to get it fresh.</p>
+<p><a class="btn" href="journey.html">Follow the journey</a></p>
+<div class="cards">
+<section class="card"><h3>Yirgacheffe, Ethiopia</h3><p>Floral and bright, with lemon and jasmine notes.</p></section>
+<section class="card"><h3>Huila, Colombia</h3><p>Balanced and sweet, with caramel and red apple.</p></section>
+<section class="card"><h3>Santos, Brazil</h3><p>Smooth and nutty, with a heavy chocolate finish.</p></section>
+</div>
+</main>
+<footer>&copy; 2026 Bean Journey. A student project for COM109.</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  // Runs once the page has finished loading
+  $(document).ready(function () {
+
+    // 1. Fade in the main heading (visual effect)
+    $("h1").hide().fadeIn(1000);
+
+    // 2. Fade the three cards in one after another (visual effect)
+    $(".card").hide().each(function (i) {
+      $(this).delay(300 * i).fadeIn(800);
+    });
+
+    // 3. Highlight a card when the mouse is over it (event handling)
+    $(".card").hover(
+      function () { $(this).css("box-shadow", "0 4px 12px rgba(0,0,0,0.25)"); },
+      function () { $(this).css("box-shadow", "none"); }
+    );
+
+  });
+</script>
+
+</body>
+</html>
